@@ -1,6 +1,7 @@
 using FCG.Api.Domain.Entities;
 using FCG.Api.Domain.Enums;
 using FCG.Api.Domain.Repositories;
+using FCG.Api.Domain.ValueObjects;
 using FCG.Api.Application.DTOs;
 using FCG.Api.Application.Validators;
 using FCG.Api.Application.Security;
@@ -32,7 +33,7 @@ namespace FCG.Api.Application.Services
 
             var user = new User(
                 request.Name,
-                request.Email,
+                new Email(request.Email),
                 passwordHash,
                 UserRole.User
             );

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using FCG.Api.Domain.Entities;
 using FCG.Api.Domain.Repositories;
+using FCG.Api.Domain.ValueObjects;
 using FCG.Api.Infrastructure.Persistence.Contexts;
 
 namespace FCG.Api.Infrastructure.Repositories
@@ -24,7 +25,7 @@ namespace FCG.Api.Infrastructure.Repositories
             => await _context.Users.FindAsync(id);
 
         public async Task<User?> GetByEmailAsync(string email)
-            => await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            => await _context.Users.FirstOrDefaultAsync(u => u.Email == new Email(email));
 
         public async Task UpdateAsync(User user)
         {

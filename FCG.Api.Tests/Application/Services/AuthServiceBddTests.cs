@@ -7,6 +7,7 @@ using FCG.Api.Application.Services;
 using FCG.Api.Domain.Entities;
 using FCG.Api.Domain.Enums;
 using FCG.Api.Domain.Repositories;
+using FCG.Api.Domain.ValueObjects;
 
 namespace FCG.Api.Tests.Application.Services
 {
@@ -32,7 +33,7 @@ namespace FCG.Api.Tests.Application.Services
         {
             // Dado
             var senhaOriginal = "Senha@123";
-            var usuario = new User("Juliana", "juliana@email.com", PasswordHasher.Hash(senhaOriginal), UserRole.User);
+            var usuario = new User("Juliana", new Email("juliana@email.com"), PasswordHasher.Hash(senhaOriginal), UserRole.User);
 
             _repositoryMock
                 .Setup(r => r.GetByEmailAsync("juliana@email.com"))
@@ -78,7 +79,7 @@ namespace FCG.Api.Tests.Application.Services
         public async Task Dado_senha_incorreta_Quando_fazer_login_Entao_deve_lancar_excecao_de_acesso_negado()
         {
             // Dado
-            var usuario = new User("Juliana", "juliana@email.com", PasswordHasher.Hash("Senha@123"), UserRole.User);
+            var usuario = new User("Juliana", new Email("juliana@email.com"), PasswordHasher.Hash("Senha@123"), UserRole.User);
 
             _repositoryMock
                 .Setup(r => r.GetByEmailAsync("juliana@email.com"))
@@ -103,7 +104,7 @@ namespace FCG.Api.Tests.Application.Services
         {
             // Dado
             var senhaOriginal = "Admin@123";
-            var admin = new User("Admin", "admin@fcg.com", PasswordHasher.Hash(senhaOriginal), UserRole.Admin);
+            var admin = new User("Admin", new Email("admin@fcg.com"), PasswordHasher.Hash(senhaOriginal), UserRole.Admin);
 
             _repositoryMock
                 .Setup(r => r.GetByEmailAsync("admin@fcg.com"))

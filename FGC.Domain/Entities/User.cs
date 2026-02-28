@@ -1,4 +1,5 @@
 using FCG.Api.Domain.Enums;
+using FCG.Api.Domain.ValueObjects;
 
 namespace FCG.Api.Domain.Entities
 {
@@ -6,7 +7,7 @@ namespace FCG.Api.Domain.Entities
     {
         public Guid Id { get; private set; }
         public string Name { get; private set; }
-        public string Email { get; private set; }
+        public Email Email { get; private set; }
         public string PasswordHash { get; private set; }
         public UserRole Role { get; private set; }
 
@@ -17,8 +18,14 @@ namespace FCG.Api.Domain.Entities
             PasswordHash = null!;
         }
 
-        public User(string name, string email, string passwordHash, UserRole role)
+        public User(string name, Email email, string passwordHash, UserRole role)
         {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentException("Nome é obrigatório");
+
+            if (string.IsNullOrWhiteSpace(passwordHash))
+                throw new ArgumentException("Hash da senha é obrigatório");
+
             Id = Guid.NewGuid();
             Name = name;
             Email = email;

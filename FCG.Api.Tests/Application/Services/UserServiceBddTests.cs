@@ -4,6 +4,7 @@ using FCG.Api.Application.DTOs;
 using FCG.Api.Application.Services;
 using FCG.Api.Domain.Entities;
 using FCG.Api.Domain.Repositories;
+using FCG.Api.Domain.ValueObjects;
 
 namespace FCG.Api.Tests.Application.Services
 {
@@ -94,7 +95,7 @@ namespace FCG.Api.Tests.Application.Services
                 Password = "Senha@123"
             };
 
-            var usuarioExistente = new User("Outro", request.Email, "hash", FCG.Api.Domain.Enums.UserRole.User);
+            var usuarioExistente = new User("Outro", new Email(request.Email), "hash", FCG.Api.Domain.Enums.UserRole.User);
 
             _repositoryMock
                 .Setup(r => r.GetByEmailAsync(request.Email))

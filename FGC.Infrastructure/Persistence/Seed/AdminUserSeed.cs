@@ -1,5 +1,6 @@
 using FCG.Api.Domain.Entities;
 using FCG.Api.Domain.Enums;
+using FCG.Api.Domain.ValueObjects;
 using FCG.Api.Infrastructure.Persistence.Contexts;
 using Microsoft.AspNetCore.Identity;
 
@@ -16,7 +17,7 @@ namespace FCG.Api.Infrastructure.Persistence.Seed
 
             var admin = new User(
                 "Admin",
-                "admin@fcg.com",
+                new Email("admin@fcg.com"),
                 hasher.HashPassword(null!, "Admin@123"),
                 UserRole.Admin
             );

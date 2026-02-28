@@ -37,7 +37,7 @@ namespace FCG.Api.Application.Services
             if (result == PasswordVerificationResult.Failed)
                 throw new UnauthorizedAccessException("Credenciais inválidas");
 
-            return GenerateToken(user.Id, user.Email, user.Role.ToString());
+            return GenerateToken(user.Id, user.Email.Value, user.Role.ToString());
         }
 
         private string GenerateToken(Guid userId, string email, string role)

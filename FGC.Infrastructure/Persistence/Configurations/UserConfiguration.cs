@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using FCG.Api.Domain.Entities;
+using FCG.Api.Domain.ValueObjects;
 
 namespace FCG.Api.Infrastructure.Persistence.Configurations
 {
@@ -14,10 +15,12 @@ namespace FCG.Api.Infrastructure.Persistence.Configurations
                 .IsRequired()
                 .HasMaxLength(100);
 
-            // Se Email é string simples:
             builder.Property(u => u.Email)
-                   .IsRequired()
-                   .HasMaxLength(100);
+                .HasConversion(
+                    email => email.Value,
+                    value => new Email(value))
+                .IsRequired()
+                .HasMaxLength(100);
 
             builder.HasIndex(u => u.Email).IsUnique();
 
