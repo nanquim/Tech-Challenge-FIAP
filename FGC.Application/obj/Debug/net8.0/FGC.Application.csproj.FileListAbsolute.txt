@@ -1,0 +1,16 @@
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/bin/Debug/net8.0/FGC.Application.deps.json
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/bin/Debug/net8.0/FGC.Application.dll
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/bin/Debug/net8.0/FGC.Application.pdb
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/bin/Debug/net8.0/FGC.Domain.dll
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/bin/Debug/net8.0/FGC.Domain.pdb
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/FGC.Application.csproj.AssemblyReference.cache
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/FGC.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/FGC.Application.AssemblyInfoInputs.cache
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/FGC.Application.AssemblyInfo.cs
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/FGC.Application.csproj.CoreCompileInputs.cache
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/FGC.Application.sourcelink.json
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/FGC.Appl.933534F2.Up2Date
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/FGC.Application.dll
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/refint/FGC.Application.dll
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/FGC.Application.pdb
+/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/Debug/net8.0/ref/FGC.Application.dll

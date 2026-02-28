@@ -23,7 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FGC.Api\FGC.Api.csproj" />
+    <ProjectReference Include="..\FGC.Application\FGC.Application.csproj" />
+    <ProjectReference Include="..\FGC.Domain\FGC.Domain.csproj" />
   </ItemGroup>
 
 </Project>

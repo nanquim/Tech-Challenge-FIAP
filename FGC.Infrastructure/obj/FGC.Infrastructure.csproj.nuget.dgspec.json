@@ -1,0 +1,225 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/juliananascimento/repos/FiapCloudGames/FGC.Infrastructure/FGC.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/FGC.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/FGC.Application.csproj",
+        "projectName": "FGC.Application",
+        "projectPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/FGC.Application.csproj",
+        "packagesPath": "/Users/juliananascimento/.nuget/packages/",
+        "outputPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/juliananascimento/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/juliananascimento/repos/FiapCloudGames/FGC.Domain/FGC.Domain.csproj": {
+                "projectPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Domain/FGC.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/juliananascimento/repos/FiapCloudGames/FGC.Domain/FGC.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Domain/FGC.Domain.csproj",
+        "projectName": "FGC.Domain",
+        "projectPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Domain/FGC.Domain.csproj",
+        "packagesPath": "/Users/juliananascimento/.nuget/packages/",
+        "outputPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/juliananascimento/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/juliananascimento/repos/FiapCloudGames/FGC.Infrastructure/FGC.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Infrastructure/FGC.Infrastructure.csproj",
+        "projectName": "FGC.Infrastructure",
+        "projectPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Infrastructure/FGC.Infrastructure.csproj",
+        "packagesPath": "/Users/juliananascimento/.nuget/packages/",
+        "outputPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/juliananascimento/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/FGC.Application.csproj": {
+                "projectPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Application/FGC.Application.csproj"
+              },
+              "/Users/juliananascimento/repos/FiapCloudGames/FGC.Domain/FGC.Domain.csproj": {
+                "projectPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Domain/FGC.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
