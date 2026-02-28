@@ -13,9 +13,17 @@ namespace FCG.Api.Domain.Entities
             Description = null!;
         }
 
-
         public Game(string title, string description, decimal price)
         {
+            if (string.IsNullOrWhiteSpace(title))
+                throw new ArgumentException("Título é obrigatório");
+
+            if (string.IsNullOrWhiteSpace(description))
+                throw new ArgumentException("Descrição é obrigatória");
+
+            if (price < 0)
+                throw new ArgumentException("Preço não pode ser negativo");
+
             Id = Guid.NewGuid();
             Title = title;
             Description = description;

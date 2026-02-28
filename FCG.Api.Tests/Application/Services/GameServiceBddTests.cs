@@ -80,6 +80,44 @@ namespace FCG.Api.Tests.Application.Services
         }
 
         [Fact]
+        public async Task Dado_titulo_vazio_Quando_criar_jogo_Entao_deve_lancar_excecao_de_argumento()
+        {
+            // Dado
+            var request = new CreateGameRequest
+            {
+                Title = "",
+                Description = "Descrição válida",
+                Price = 50m
+            };
+
+            // Quando
+            var acao = async () => await _gameService.CreateAsync(request);
+
+            // Então
+            await acao.Should().ThrowAsync<ArgumentException>()
+                .WithMessage("Título é obrigatório");
+        }
+
+        [Fact]
+        public async Task Dado_preco_negativo_Quando_criar_jogo_Entao_deve_lancar_excecao_de_argumento()
+        {
+            // Dado
+            var request = new CreateGameRequest
+            {
+                Title = "Jogo Válido",
+                Description = "Descrição válida",
+                Price = -10m
+            };
+
+            // Quando
+            var acao = async () => await _gameService.CreateAsync(request);
+
+            // Então
+            await acao.Should().ThrowAsync<ArgumentException>()
+                .WithMessage("Preço não pode ser negativo");
+        }
+
+        [Fact]
         public async Task Dado_dados_validos_Quando_criar_jogo_Entao_jogo_deve_ter_id_unico()
         {
             // Dado
