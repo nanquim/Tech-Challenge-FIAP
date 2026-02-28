@@ -1,0 +1,80 @@
+## .NET / C#
+
+# Build results
+bin/
+obj/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# MSBuild
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio
+.vs/
+*.rsuser
+*.vsp
+*.vspx
+*.sap
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vssscc
+*.vspscc
+*.pidb
+*.svclog
+
+# VS Code
+.vscode/
+
+## Banco de dados SQLite
+
+*.db
+*.db-shm
+*.db-wal
+
+## Segredos / configurações locais
+
+# Não versionar overrides de configuração local
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+.env
+.env.*
+
+## macOS
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+## Arquivos temporários / comprimidos
+
+*.zip
+*.tar
+*.tar.gz
+
+## Cobertura de testes
+
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
