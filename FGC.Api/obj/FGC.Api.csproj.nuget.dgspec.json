@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/juliananascimento/repos/FiapCloudGames/FGC.api/FGC.Api.csproj": {}
+    "/Users/juliananascimento/repos/FiapCloudGames/FGC.Api/FGC.Api.csproj": {}
   },
   "projects": {
-    "/Users/juliananascimento/repos/FiapCloudGames/FGC.api/FGC.Api.csproj": {
+    "/Users/juliananascimento/repos/FiapCloudGames/FGC.Api/FGC.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/juliananascimento/repos/FiapCloudGames/FGC.api/FGC.Api.csproj",
+        "projectUniqueName": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Api/FGC.Api.csproj",
         "projectName": "FGC.Api",
-        "projectPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.api/FGC.Api.csproj",
+        "projectPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Api/FGC.Api.csproj",
         "packagesPath": "/Users/juliananascimento/.nuget/packages/",
-        "outputPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.api/obj/",
+        "outputPath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/juliananascimento/.nuget/NuGet/NuGet.Config"

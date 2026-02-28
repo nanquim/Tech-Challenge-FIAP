@@ -46,6 +46,19 @@ namespace FCG.Api.Tests.Application.Validation
         }
 
         [Fact]
+        public void Dado_senha_sem_letra_Quando_validar_Entao_deve_retornar_falso()
+        {
+            // Dado
+            var senha = "12345678!";
+
+            // Quando
+            var resultado = PasswordValidator.IsValid(senha);
+
+            // Então
+            resultado.Should().BeFalse();
+        }
+
+        [Fact]
         public void Dado_senha_valida_Quando_validar_Entao_deve_retornar_verdadeiro()
         {
             // Dado

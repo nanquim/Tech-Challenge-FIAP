@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S1GKsaJm8ww=",
+  "dgSpecHash": "K/8lnx7G2x0=",
   "success": true,
-  "projectFilePath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.api/FGC.Api.csproj",
+  "projectFilePath": "/Users/juliananascimento/repos/FiapCloudGames/FGC.Api/FGC.Api.csproj",
   "expectedPackageFiles": [
     "/Users/juliananascimento/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.0/microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "/Users/juliananascimento/.nuget/packages/microsoft.aspnetcore.openapi/8.0.21/microsoft.aspnetcore.openapi.8.0.21.nupkg.sha512",
