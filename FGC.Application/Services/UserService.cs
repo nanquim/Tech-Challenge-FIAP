@@ -19,8 +19,7 @@ namespace FCG.Api.Application.Services
 
         public async Task<Guid> CreateAsync(CreateUserRequest request)
         {
-            if (!EmailValidator.IsValid(request.Email))
-                throw new ArgumentException("Email inválido");
+            var email = new Email(request.Email);
 
             if (!PasswordValidator.IsValid(request.Password))
                 throw new ArgumentException("Senha inválida");
@@ -31,12 +30,7 @@ namespace FCG.Api.Application.Services
 
             var passwordHash = PasswordHasher.Hash(request.Password);
 
-            var user = new User(
-                request.Name,
-                new Email(request.Email),
-                passwordHash,
-                UserRole.User
-            );
+            var user = new User(request.Name, email, passwordHash, UserRole.User);
 
             await _userRepository.AddAsync(user);
 
