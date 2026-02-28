@@ -1,22 +1,34 @@
+using System.Text.RegularExpressions;
+
 namespace FCG.Api.Domain.ValueObjects
 {
-    public class Email
+    public sealed class Email
     {
+        private static readonly Regex _regex = new(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.Compiled);
+
         public string Value { get; private set; }
 
-        protected Email()
+        private Email()
         {
             Value = null!;
         }
 
         public Email(string value)
         {
-            if (string.IsNullOrWhiteSpace(value) || !value.Contains("@"))
+            if (string.IsNullOrWhiteSpace(value) || !_regex.IsMatch(value))
                 throw new ArgumentException("Email inválido");
 
             Value = value.ToLower();
         }
 
         public override string ToString() => Value;
+
+        public override bool Equals(object? obj) => obj is Email other && Value == other.Value;
+
+        public override int GetHashCode() => Value.GetHashCode();
+
+        public static bool operator ==(Email? left, Email? right) => Equals(left, right);
+
+        public static bool operator !=(Email? left, Email? right) => !Equals(left, right);
     }
 }

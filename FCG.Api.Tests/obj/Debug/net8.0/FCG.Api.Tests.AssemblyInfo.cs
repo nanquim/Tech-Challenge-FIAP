@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FCG.Api.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef72d632ddc88df913fceb3708166a2fe95bb463")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ceed3bf6aff81cb076c1cfd68d8ff22288bad2e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("FCG.Api.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FCG.Api.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
